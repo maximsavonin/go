@@ -32,7 +32,7 @@ func main() {
   statement, _ = db.Prepare("CREATE TABLE IF NOT EXISTS times (id INTEGER PRIMARY KEY, time INTEGER, user_id INTEGER, FOREIGN KEY (user_id) REFERENCES users (id))")
   statement.Exec()
 
-  bot, err := tgbotapi.NewBotAPI("1763199303:AAHm07HCRcXvqeo_BYd_G7MSxeZN74doZFg")
+  bot, err := tgbotapi.NewBotAPI("")
   if err != nil {
     log.Panic(err)
   }
